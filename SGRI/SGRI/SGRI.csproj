@@ -49,11 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CoordenadoDiretor.cs">
+    <Compile Include="frmCoordenadoDiretor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CoordenadoDiretor.Designer.cs">
-      <DependentUpon>CoordenadoDiretor.cs</DependentUpon>
+    <Compile Include="frmCoordenadoDiretor.Designer.cs">
+      <DependentUpon>frmCoordenadoDiretor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfraEstruturaEquipamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfraEstruturaEquipamentos.Designer.cs">
+      <DependentUpon>frmInfraEstruturaEquipamentos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogon.cs">
       <SubType>Form</SubType>
@@ -74,8 +80,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CoordenadoDiretor.resx">
-      <DependentUpon>CoordenadoDiretor.cs</DependentUpon>
+    <EmbeddedResource Include="frmCoordenadoDiretor.resx">
+      <DependentUpon>frmCoordenadoDiretor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfraEstruturaEquipamentos.resx">
+      <DependentUpon>frmInfraEstruturaEquipamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogon.resx">
       <DependentUpon>frmLogon.cs</DependentUpon>

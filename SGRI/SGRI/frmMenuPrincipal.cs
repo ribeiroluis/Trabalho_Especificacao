@@ -15,5 +15,17 @@ namespace SGRI
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmInfraEstruturaEquipamentos equip = new frmInfraEstruturaEquipamentos();
+            equip.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmCoordenadoDiretor cord = new frmCoordenadoDiretor();
+            cord.ShowDialog();
+        }
     }
 }

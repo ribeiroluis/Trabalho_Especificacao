@@ -15,7 +15,7 @@ namespace SGRI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogon());
+            Application.Run(new frmMenuPrincipal());
         }
     }
 }
