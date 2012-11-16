@@ -11,7 +11,8 @@
     <RootNamespace>SGRI</RootNamespace>
     <AssemblyName>SGRI</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -49,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlterarSenha.Designer.cs">
+      <DependentUpon>frmAlterarSenha.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCoordenadoDiretor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +67,18 @@
     </Compile>
     <Compile Include="frmInfraEstruturaEquipamentos.Designer.cs">
       <DependentUpon>frmInfraEstruturaEquipamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfraEstruturaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfraEstruturaUsuarios.Designer.cs">
+      <DependentUpon>frmInfraEstruturaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInfraReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInfraReservas.Designer.cs">
+      <DependentUpon>frmInfraReservas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogon.cs">
       <SubType>Form</SubType>
@@ -73,6 +92,12 @@
     <Compile Include="frmMenuPrincipal.Designer.cs">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfessor.Designer.cs">
+      <DependentUpon>frmProfessor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -80,17 +105,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAlterarSenha.resx">
+      <DependentUpon>frmAlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCoordenadoDiretor.resx">
       <DependentUpon>frmCoordenadoDiretor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInfraEstruturaEquipamentos.resx">
       <DependentUpon>frmInfraEstruturaEquipamentos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmInfraEstruturaUsuarios.resx">
+      <DependentUpon>frmInfraEstruturaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInfraReservas.resx">
+      <DependentUpon>frmInfraReservas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogon.resx">
       <DependentUpon>frmLogon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfessor.resx">
+      <DependentUpon>frmProfessor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,6 +137,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -116,6 +154,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1352915051_001_52.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

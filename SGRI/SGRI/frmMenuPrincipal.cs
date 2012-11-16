@@ -27,5 +27,29 @@ namespace SGRI
             frmCoordenadoDiretor cord = new frmCoordenadoDiretor();
             cord.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmInfraEstruturaUsuarios user = new frmInfraEstruturaUsuarios();
+            user.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmProfessor prof = new frmProfessor();
+            prof.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            frmInfraReservas res = new frmInfraReservas();
+            res.ShowDialog();
+        }
+
+        private void alterarSenhaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAlterarSenha alter = new frmAlterarSenha();
+            alter.ShowDialog();
+        }
     }
 }
