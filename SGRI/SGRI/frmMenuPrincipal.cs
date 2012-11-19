@@ -24,8 +24,8 @@ namespace SGRI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            frmCoordenadoDiretor cord = new frmCoordenadoDiretor();
-            cord.ShowDialog();
+            frmCoordenadoDiretor cord = new frmCoordenadoDiretor();            
+            cord.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
